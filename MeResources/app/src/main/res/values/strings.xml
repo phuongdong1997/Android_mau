@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MeResources</string>
+    <string name="hello_world">Hello world 123!</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_android">Hello Android 123</string>
+    <string name="my_str">Study %1$s %2$d</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:orderInCategory="20"
+        myapp:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_search"
+        />
+
+    <item
+        android:id="@+id/action_share"
+        android:title="Share"
+        android:orderInCategory="30"
+        myapp:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_share"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:orderInCategory="40"
+        myapp:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="About"
+        android:orderInCategory="10"
+        myapp:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_about_me"
+                android:title="About Me"/>
+
+            <item
+                android:id="@+id/action_about_app"
+                android:title="About App"/>
+        </menu>
+
+    </item>
+
+</menu>

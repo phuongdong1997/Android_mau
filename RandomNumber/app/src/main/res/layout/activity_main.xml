@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background_four"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Format"
+        android:background="#E0E0F8"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/ckbBackground"
+            android:checked="false"
+            android:layout_weight="1"
+            android:text="Background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/ckbTextColor"
+            android:checked="false"
+            android:layout_weight="1"
+            android:text="Text Color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/ckbTextCenter"
+            android:checked="false"
+            android:layout_weight="1"
+            android:text="Center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Number Type"
+        android:background="#E0E0F8"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rdgNumberType"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rdbOdd"
+                    android:text="Odd"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rdbEven"
+                    android:text="Even"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rdbBoth"
+                    android:checked="true"
+                    android:text="Both"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnShow"
+        android:onClick="showResult"
+        android:text="Show result"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:text="Your's result"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

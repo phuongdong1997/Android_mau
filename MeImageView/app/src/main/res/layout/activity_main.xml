@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/myLinear"
+    android:background="@drawable/background_two"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/doremon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imvCharacter" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:text="Change Character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnChange" />
+
+</LinearLayout>

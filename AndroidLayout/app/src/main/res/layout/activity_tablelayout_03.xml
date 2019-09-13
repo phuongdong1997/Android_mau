@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_weight="1"
+        android:background="#FFF200"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TableLayout
+        android:layout_weight="3"
+        android:stretchColumns="*"
+        android:layout_width="0dp"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#51EC72"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00A2E8"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#51EC72"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00A2E8"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#51EC72"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00A2E8"/>
+
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_weight="1"
+        android:background="#FFF200"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

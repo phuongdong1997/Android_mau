@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/myLinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <Button
+        android:onClick="inlineListener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inline listener"
+        android:id="@+id/btnOne" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inline anonymous listener"
+        android:id="@+id/btnTwo" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity is listener"
+        android:id="@+id/btnThree" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listener is variable"
+        android:id="@+id/btnFour" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explicit listener class"
+        android:id="@+id/btnFive"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/tvResult"
+        android:background="#67ff31" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_four"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_item_distance"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textColor="@color/color_one"
+        android:background="@color/color_two"
+        android:padding="20dp"
+        android:text="Hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/color_two"
+        android:background="@color/color_one"
+        android:text="@string/hello_world"
+        android:layout_marginTop="@dimen/activity_item_distance"
+        android:padding="@dimen/activity_item_distance"
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

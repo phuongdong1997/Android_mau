@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnTop"
+        android:text="Top Content Here"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="#10387E"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBottom"
+        android:text="Bottom Content Here"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="#01A4A3"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn2nd"
+            android:text="2nd"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="#CED001"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+         <Button
+             android:id="@+id/btn1st"
+             android:text="1st"
+             android:textSize="20dp"
+             android:textColor="#fff"
+             android:background="#01A0CA"
+             android:layout_centerVertical="true"
+             android:layout_toLeftOf="@+id/btn2nd"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <Button
+             android:id="@+id/btn3rd"
+             android:text="3rd"
+             android:textSize="20dp"
+             android:textColor="#fff"
+             android:background="#61AE24"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/btn2nd"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+</RelativeLayout>

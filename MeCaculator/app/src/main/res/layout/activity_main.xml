@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_caculator"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Number -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtFirst"
+            android:hint="Number One"
+            android:numeric="integer"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtSecond"
+            android:hint="Number Two"
+            android:numeric="integer"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Caculator -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:text="+"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnSub"
+            android:text="-"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnMul"
+            android:text="*"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnDiv"
+            android:text="/"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Result"
+        android:gravity="center"
+        android:background="#d6e338"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult" />
+
+</LinearLayout>

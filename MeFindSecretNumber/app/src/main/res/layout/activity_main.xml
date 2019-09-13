@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:id="@+id/tableNumber"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Score: 5"
+        android:gravity="center"
+        android:background="#d6e338"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult" />
+    <Button
+        android:onClick="playAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlayAgain"
+        android:text="New Game!"/>
+</TableLayout>

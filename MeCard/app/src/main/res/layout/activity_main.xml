@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:background="@drawable/background_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearCart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:text="+"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/card_down"
+            android:layout_height="match_parent"
+            android:id="@+id/ivOne" />
+        <ImageView
+            android:text="+"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/card_down"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivTwo" />
+        <ImageView
+            android:text="+"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/card_down"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivThree" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearControl"
+        android:layout_below="@+id/linearCart"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/btnResult"
+            android:onClick="showResult"
+            android:text="Show Result"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnPlayAgain"
+            android:onClick="playAgain"
+            android:text="Play Again"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/linearControl"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Score: 0"
+        android:gravity="center"
+        android:background="#d6e338"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult" />
+
+
+</RelativeLayout>

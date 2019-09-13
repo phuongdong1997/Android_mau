@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:drawableLeft="@drawable/mario"
+        android:drawablePadding="10dp"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:onClick="showContent"
+        android:clickable="false"
+        android:background="#F5FBEF"
+        android:textColor="@color/abc_search_url_text"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show content"
+        android:id="@+id/btnShow"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold|italic"
+        android:gravity="center_vertical" />
+
+
+</LinearLayout>

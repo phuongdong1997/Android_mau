@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_bmi"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:backgroundTintMode="src_over">
+
+    <!-- Number -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtHeight"
+            android:hint="Chiều cao (cm)"
+            android:numeric="integer"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtWeight"
+            android:hint="Cân nặng (kg)"
+            android:numeric="integer"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnView"
+        android:text="Xem kết quả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Nhập chiều cao (cm) và cân nặng của bạn (kg) để xem kết quả !"
+        android:gravity="center"
+        android:background="#d6e338"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
